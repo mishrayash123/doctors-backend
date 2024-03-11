@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    background-color: #007569;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    color: white;
+}
+.search{
+    width: 220px;
+    height: 27px;
+    display: flex;
+    position: relative;
+    left: 100px;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border: none;
+    padding-left: 34px;
+    border-radius: 5px;
+}
+.search-btn{
+    position: absolute;
+    color: rgb(141, 139, 139);
+    background-color: white;
+    border: none;
+    top: 6px;
+    left: 10px;
+}
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+}
+#items ul{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+#items ul li{
+    margin: 0 20px;
+}
+#items ul li a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Heading */
+.head{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 50px auto;
+}
+.head p{
+    font-size: 30px;
+    color: #007569;
+}
+#head-info{
+    font-size: 24px;
+    margin-top: 10px;
+    color: rgb(150, 148, 148);
+}
+
+/* Tabs Section */
+.tab{
+    margin: 30px 120px;
+    height: 30px;
+    border: none;
+    /* flex-wrap: wrap; */
+}
+.tab button{
+    width: auto;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid rgb(161, 160, 160);
+    padding: 0 20px;
+    margin: 0 10px;
+    border-radius: 50px;
+}
+.tab button a{
+    text-decoration: none;
+    color: black;
+}
+.selected{
+    background-color: #276A7B;
+}
+
+
+/* Container */
+.doctors-container{
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.doctors-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.doctors-list{
+    display: flex;
+    border: 1px solid #d0e7e5;
+    background-color: rgb(203, 223, 221);
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 480px;
+    height: 180px;
+}
+.doctor-img{
+    padding: 0 30px;
+}
+.about-doctor{
+    margin-top: 8px;
+    margin-left: 25px;
+}
+#name{
+    font-size: 26px;
+}
+#about-name{
+    margin-top: 10px;
+    flex-wrap: wrap;
+    color: rgb(141, 139, 139);
+}
+.book{
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 50px;
+    align-items: center;
+    bottom: 20px;
+}
+.book button{
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #276A7B;
+    border: none;
+    border-radius: 10px;
+}
+.book button a{
+    text-decoration: none;
+    color: white;
+}
+.checked {
+	color: orange;
+}
+.more-info button{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #007569;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: 630px;
+    margin-bottom: 30px;
+}
+.more-info button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 220px;
+    flex-wrap: wrap;
+    background-color: #007569;
+}
+.footer-container{
+    width: 1000px;
+    margin: 0 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-logo{
+    width: 150px;
+    height: 50px;
+    color: white;
+    margin-top: -50px;
+}
+#thank-note{
+    color: rgb(229, 243, 242);
+    width: 390px;
+    margin: 30px 0;
+    line-height: 28px;
+}
+#mobile{
+    display: flex;
+    margin: 10px 0;
+    color: rgb(229, 243, 242);
+}
+#mobile p{
+    margin-left: 10px;
+}
+#mail{
+    display: flex;
+    margin-bottom: 10px;
+    color: rgb(229, 243, 242);
+}
+#mail p{
+    margin-left: 10px;
+}
+#social-media{
+    margin-left: -10px;
+}
+#social-media a{
+    margin-left: 10px;
+}
+.line{
+    width: 900px;
+    margin: 0 220px;
+}
+.footer-privacy{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: rgb(3, 83, 74);
+}
+.privacy{
+    width: 800px;
+    margin: 0 250px;
+    display: flex;
+    font-size: 14px;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(216, 216, 216);
+}
+.privacy a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(216, 216, 216);
+}
+
+
+@media only screen and (min-width:765px) and (max-width:1130px) {
+
+    .navbar{
+        width: 1080px;
+        margin: auto;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search{
+        width: 200px;
+        height: 27px;
+        left: 40px;
+    }
+    .head{
+        width: 800px;
+        margin-left: 120px;
+    }
+    .doctors-info{
+        display: flex;
+    }
+    .doctors-list{
+        width: 400px;
+    }
+    .about-doctor{
+        margin-top: -2px;
+        margin-left: 10px;
+    }
+    .book{
+        gap: 30px;
+    }
+    .more-info button{
+        margin-left: 500px;
+    }
+    .footer{
+        width: 1080px;
+        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-container{
+        width: 1000px;
+        margin-left: 100px;
+    }
+    .line{
+        width: 860px;
+        margin-left: 100px;
+    }
+    .privacy{
+        margin-left: 110px;
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width:765px){
+
+    .navbar{
+        width: 1080px;
+        margin: auto;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search{
+        width: 200px;
+        height: 27px;
+        left: 40px;
+    }
+    .head{
+        width: 800px;
+        margin-left: 120px;
+    }
+    .tab{
+        margin: 0;
+        max-width: 120%;
+    }
+    .doctors-list{
+        width: 400px;
+    }
+    .about-doctor{
+        margin-top: -2px;
+        margin-left: 10px;
+    }
+    .book{
+        gap: 30px;
+    }
+    .more-info button{
+        margin-left: 500px;
+    }
+    .footer{
+        width: 1080px;
+        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-container{
+        width: 1000px;
+        margin-left: 100px;
+    }
+    .line{
+        width: 860px;
+        margin-left: 100px;
+    }
+    .privacy{
+        margin-left: 110px;
+    }
+
+}
