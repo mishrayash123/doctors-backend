@@ -76,7 +76,6 @@ body{
     color: black;
 }
 
-
 /* Heading */
 .head{
     text-align: center;
@@ -99,7 +98,6 @@ body{
     margin: 30px 120px;
     height: 30px;
     border: none;
-    /* flex-wrap: wrap; */
 }
 .tab button{
     width: auto;
@@ -125,9 +123,8 @@ body{
 }
 .doctors-info{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
 }
 .doctors-list{
     display: flex;
@@ -185,14 +182,13 @@ body{
     background-color: white;
     border-radius: 5px;
     margin-top: 80px;
-    margin-left: 630px;
+    margin-left: 650px;
     margin-bottom: 30px;
 }
 .more-info button a{
     text-decoration: none;
     color: black;
 }
-
 
 /* Footer */
 .footer{
@@ -333,6 +329,9 @@ body{
         display: flex;
         flex-wrap: wrap;
     }
+    .logo{
+        margin-top: 5px;
+    }
     .search{
         width: 200px;
         height: 27px;
@@ -349,7 +348,6 @@ body{
     }
     .doctors-info{
         margin-top: 50px;
-        /* max-height: 500px; */
     }
     .doctors-list{
         display: inline;

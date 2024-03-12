@@ -186,7 +186,7 @@ body{
 .nav{
     width: auto;
     height: 40px;
-    background-color: #007569;
+    background-color: #276A7B;
     text-align: center;
     color: white;
 }
@@ -376,6 +376,9 @@ h4{
         height: 100px;
         display: flex;
         flex-wrap: wrap;
+    }
+    .logo{
+        margin-top: 5px;
     }
     .search{
         width: 200px;

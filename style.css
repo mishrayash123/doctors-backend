@@ -16,7 +16,6 @@ body{
     margin: auto;
     height: 60px;
     background-color: #007569;
-    /* position: fixed; */
 }
 .logo{
     width: 150px;
@@ -140,6 +139,7 @@ body{
 
 
 /* Container */
+/* Section1 */
 .head-container{
     display: flex;
 }
@@ -200,9 +200,12 @@ body{
     margin-top: 40px;
     object-fit: cover;
 }
+
+/* Section2 */
 .booking {
+    width: 1050px;
 	height: 230px;
-	margin: 100px 140px;
+	margin: 80px 140px;
     background-image: linear-gradient(#007569, #96c2bd);
 	border-radius: 30px;
     position: relative;
@@ -224,6 +227,9 @@ body{
     top: -30px;
     left: 240px;
 }
+.wayToBook .book1{
+    position: relative;
+}
 .booking .wayToBook {
 	display: flex;
 	flex-wrap: wrap;
@@ -244,33 +250,44 @@ body{
 	box-shadow: 0 5px 10px #c0c2c2;
 	cursor: default;
 }
-.container2 {
+.book1 h2{
+    width: 50px;
+    height: 48px;
+    text-align: center;
+    position: absolute;
+    border-radius: 80px;
+    color: white;
+    background-color: #276A7B;
+    top: 2px;
+}
+
+/* Section3 */
+.container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
     text-wrap: wrap;
-	margin: 200px auto;
-	padding: 0 80px;
+	margin-top: 200px;
+	margin-left: 60px;
 }
 .side1{
-    width: 600px;
-    margin: 20px 60px;
+    margin-left: 60px;
     border: 1px solid linear-gradient(#007569, #d4e4e2);
     background-image: linear-gradient(#037c70, #e8faf8);
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 }
-.side3{
+.side-img{
     width: 460px;
     height: 470px;
     object-fit: cover;
     margin-top: -60px;
 }
 .side4{
-    margin-left: -20px;
+    margin-left: 20px;
 }
 .side4 h1 {
-    font-size: 30px;
+    font-size: 36px;
     color: #276A7B;
 	margin-bottom: 10px;
 }
@@ -294,7 +311,97 @@ body{
     color: white;
 }
 
+/* Section4 */
+.section4{
+    margin-top: 60px;
+}
+.head1{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 20px auto;
+}
+.head1 p{
+    font-size: 29px;
+    color: #276A7B;
+    font-weight: bolder;
+}
+.doctors-info1{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.doctors-list1{
+    display: flex;
+    border: 1px solid #cbd7da;
+    background-color: #cbd7da;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 330px;
+    height: 230px;
+    position: relative;
+}
+.doctors-list2{
+    display: flex;
+    border: 1px solid #acd1cf;
+    background-color: #acd1cf;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 330px;
+    height: 230px;
+    position: relative;
+}
+.doctors-list3{
+    display: flex;
+    border: 1px solid #d8cc9f;
+    background-color: #d8cc9f;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 330px;
+    height: 230px;
+    position: relative;
+}
+.doctor-img1{
+    margin-left: -10px;
+    object-fit: cover;
+}
+.about-doctor1{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#name1{
+    font-size: 30px;
+    font-weight: 500;
+}
+#about-name1{
+    width: 120px;
+    margin-top: 5px;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
+.read-button{
+    position: absolute;
+    font-size: 11px;
+    width: 100px;
+    height: 28px;
+    background-color: white;
+    border: none;
+    border-radius: 14px;
+    bottom: 15px;
+}
+.read-button a{
+    text-decoration: none;
+    color: black;
+}
 
+/* Section5 */
+.section5{
+    margin-top: 60px;
+}
 .head{
     text-align: center;
     flex-wrap: wrap;
@@ -308,7 +415,7 @@ body{
 }
 #head-info{
     font-size: 22px;
-    color: rgb(172, 170, 170);
+    color: rgb(179, 176, 176);
 }
 .doctors-container{
     margin: 0 130px;
@@ -320,8 +427,8 @@ body{
 }
 .doctors-list{
     display: flex;
-    border: 1px solid #cfdcdf;
-    background-color: #cfdcdf;
+    border: 1px solid #bdddd8;
+    background-color: #bdddd8;
     padding: 10px;
     margin: 10px auto;
     border-radius: 10px;
@@ -335,14 +442,24 @@ body{
     margin-top: 8px;
     margin-left: 25px;
 }
+.about-doctors{
+    margin-top: 8px;
+    margin-left: 45px;
+}
 .wish-list{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    gap: 40%;
 }
-.wish-list img{
+.wish-list span{
+    margin-top: 10px;
     width: 20px;
     height: 20px;
-    margin-left: 100px;
+    color: white;
+}
+.wish-list .checked1{
+    color: red;
 }
 #name{
     font-size: 26px;
@@ -374,25 +491,66 @@ body{
     color: white;
 }
 .checked {
-	color: orange;
+	color: rgb(243, 180, 63);
 }
-/* .more-info button{
+
+/* Section6 */
+.review{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 140px;
+}
+.user-review h5{
+    font-size: 30px;
+    color: #276A7B;
+}
+.user-review p{
+    width: 340px;
+    font-size: 17px;
+    margin-top: 10px;
+    color: #646464;
+}
+.review-button button{
     width: 80px;
-    height: 30px;
-    border: 1px solid #007569;
+    height: 33px;
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-top: 60px;
     background-color: white;
-    border-radius: 5px;
-    margin-top: 80px;
-    margin-left: 630px;
-    margin-bottom: 30px;
 }
-.more-info button a{
+.review-button button a{
     text-decoration: none;
     color: black;
-} */
+}
 
-
-
+/* Section7 */
+.container3{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 140px;
+}
+.box{
+    width: 220px;
+    text-align: center;
+}
+#user-name{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #276A7B;
+    text-align: start;
+}
+.box p{
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: start;
+    color: #979696;
+    line-height: 20px;
+}
+.stars{
+    margin-top: 10px;
+    text-align: end;
+}
 
 /* Footer */
 .footer{
@@ -482,26 +640,22 @@ body{
         height: 27px;
         left: 40px;
     }
-    .head{
-        width: 800px;
-        margin-left: 120px;
+
+    .side-container{
+        margin-left: 100px;
     }
-    .doctors-info{
-        display: flex;
+    .side-container h1{
+        font-size: 40px;
     }
-    .doctors-list{
-        width: 400px;
+    .booking {
+        margin-left: 100px;
+        width: 900px;
+        height: 230px;
     }
-    .about-doctor{
-        margin-top: -2px;
-        margin-left: 10px;
+    .books{
+        left: 140px;
     }
-    .book{
-        gap: 30px;
-    }
-    .more-info button{
-        margin-left: 500px;
-    }
+
     .footer{
         width: 1080px;
         height: 220px;
@@ -525,16 +679,27 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 1080px;
+        width: 1190px;
         margin: auto;
-        height: 60px;
+        height: 100px;
         display: flex;
         flex-wrap: wrap;
+    }
+    .logo{
+        margin-top: 5px;
     }
     .search{
         width: 200px;
         height: 27px;
         left: 40px;
+    }
+    .booking {
+        margin-left: 110px;
+        width: 990px;
+        height: 230px;
+    }
+    .books{
+        left: 170px;
     }
     .head{
         width: 800px;
@@ -554,7 +719,7 @@ body{
         margin-left: 500px;
     }
     .footer{
-        width: 1080px;
+        width: 1190px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
@@ -565,10 +730,10 @@ body{
     }
     .line{
         width: 860px;
-        margin-left: 100px;
+        margin-left: 130px;
     }
     .privacy{
-        margin-left: 110px;
+        margin-left: 150px;
     }
 
 }

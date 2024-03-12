@@ -1,5 +1,3 @@
-const buttons = document.querySelectorAll(".all");
-
 // function openNavbar() {
 // 	document.getElementById("sideNavigationBar")
 // 		.style.width = "50%";
@@ -8,6 +6,9 @@ const buttons = document.querySelectorAll(".all");
 // 	document.getElementById("sideNavigationBar")
 // 		.style.width = "0%";
 // }
+
+
+const buttons = document.querySelectorAll(".all");
 
 buttons.forEach(button=>{
     button.addEventListener("click",()=>{
@@ -20,19 +21,19 @@ buttons.forEach(button=>{
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
+}
   
-  function closeForm() {
+function closeForm() {
     document.getElementById("myForm").style.display = "none";
-  }
+}
 
-  var MenuItems = document.getElementById('MenuItems');
-  MenuItems.style.maxHeight = '0px';
+var MenuItems = document.getElementById('MenuItems');
+MenuItems.style.maxHeight = '0px';
 
-  function menutoggle() {
+function menutoggle() {
     if (MenuItems.style.maxHeight == '0px') {
-      MenuItems.style.maxHeight = '200px';
+        MenuItems.style.maxHeight = '200px';
     } else {
-      MenuItems.style.maxHeight = '0px';
+        MenuItems.style.maxHeight = '0px';
     }
-  }
+}
