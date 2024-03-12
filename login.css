@@ -301,7 +301,7 @@ h4{
     .navbar{
         width: 1080px;
         margin: auto;
-        height: 60px;
+        height: 100px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -311,19 +311,26 @@ h4{
         left: 40px;
     }
     .login-container{
+        display: inline-block;
         margin: 80px auto;
     }
     .side-img{
-        margin: 60px 20px;
+        width: 600px; 
+        height: 450px;
+        margin: 50px 230px;
     }
     .login-form{
-        padding: 0 25px;
+        font-size: 22px;
+        width: 600px; 
+        height: 700px;
+        margin: 55px 200px;
+        padding: 0 28px;
     }
     .form input{
-        width: 350px;
+        width: 500px;
     }
     .button{
-        width: 380px;
+        width: 520px;
     }
     .footer{
         width: 1080px;
@@ -336,7 +343,7 @@ h4{
         margin-left: 100px;
     }
     .line{
-        width: 860px;
+        width: 820px;
         margin-left: 100px;
     }
     .privacy{

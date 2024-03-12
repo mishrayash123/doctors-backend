@@ -121,8 +121,7 @@ body{
 
 /* Container */
 .doctors-container{
-    margin-left: 80px;
-    margin-right: 40px;
+    margin-left: 40px;
 }
 .doctors-info{
     display: flex;
@@ -292,14 +291,15 @@ body{
         display: flex;
     }
     .doctors-list{
-        width: 400px;
+        margin: auto;
+        max-width: 500px;
     }
     .about-doctor{
-        margin-top: -2px;
+        margin-top: 2px;
         margin-left: 10px;
     }
     .book{
-        gap: 30px;
+        gap: 35px;
     }
     .more-info button{
         margin-left: 500px;
@@ -329,7 +329,7 @@ body{
     .navbar{
         width: 1080px;
         margin: auto;
-        height: 60px;
+        height: 100px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -343,21 +343,34 @@ body{
         margin-left: 120px;
     }
     .tab{
-        margin: 0;
-        max-width: 120%;
+        display: inline-block;
+        margin: 10px 0;
+        max-width: auto;
+    }
+    .doctors-info{
+        margin-top: 50px;
+        /* max-height: 500px; */
     }
     .doctors-list{
-        width: 400px;
+        display: inline;
+        margin: 20px 0;
+        max-width: 300;
+        max-height: 500px;
     }
     .about-doctor{
         margin-top: -2px;
         margin-left: 10px;
     }
+    .doctor-img{
+        margin: auto;
+        width: 10px;
+        height: 10px;
+    }
     .book{
-        gap: 30px;
+        gap: 20px;
     }
     .more-info button{
-        margin-left: 500px;
+        margin: 60px 200px;
     }
     .footer{
         width: 1080px;
@@ -370,7 +383,7 @@ body{
         margin-left: 100px;
     }
     .line{
-        width: 860px;
+        width: 840px;
         margin-left: 100px;
     }
     .privacy{
