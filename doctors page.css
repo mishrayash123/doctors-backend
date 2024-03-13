@@ -283,22 +283,16 @@ body{
         width: 800px;
         margin-left: 120px;
     }
-    .doctors-info{
-        display: flex;
-    }
-    .doctors-list{
-        margin: auto;
-        max-width: 500px;
-    }
-    .about-doctor{
-        margin-top: 2px;
-        margin-left: 10px;
+    .doctors-info {
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
     }
     .book{
-        gap: 35px;
+        gap: 40px;
     }
     .more-info button{
-        margin-left: 500px;
+        margin: 60px 500px;
     }
     .footer{
         width: 1080px;
@@ -311,7 +305,7 @@ body{
         margin-left: 100px;
     }
     .line{
-        width: 860px;
+        width: 820px;
         margin-left: 100px;
     }
     .privacy{
@@ -342,33 +336,19 @@ body{
         margin-left: 120px;
     }
     .tab{
-        display: inline-block;
-        margin: 10px 0;
-        max-width: auto;
+        padding: 10px;
     }
-    .doctors-info{
+    .doctors-info {
         margin-top: 50px;
-    }
-    .doctors-list{
-        display: inline;
-        margin: 20px 0;
-        max-width: 300;
-        max-height: 500px;
-    }
-    .about-doctor{
-        margin-top: -2px;
-        margin-left: 10px;
-    }
-    .doctor-img{
-        margin: auto;
-        width: 10px;
-        height: 10px;
+        margin-left: 240px;
+        flex-direction: column;
+        padding-top: 50px;
     }
     .book{
-        gap: 20px;
+        gap: 40px;
     }
     .more-info button{
-        margin: 60px 200px;
+        margin: 60px 500px;
     }
     .footer{
         width: 1080px;
@@ -381,7 +361,7 @@ body{
         margin-left: 100px;
     }
     .line{
-        width: 840px;
+        width: 820px;
         margin-left: 100px;
     }
     .privacy{

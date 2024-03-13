@@ -368,15 +368,16 @@ h4{
     .footer{
         width: 1080px;
         height: 220px;
-        display: flex;
-        flex-wrap: wrap;
     }
     .footer-container{
         width: 1000px;
-        margin-left: 160px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
     }
     .line{
-        width: 860px;
+        width: 820px;
         margin-left: 100px;
     }
     .privacy{
@@ -455,12 +456,12 @@ h4{
         height: 220px;
     }
     .footer-container{
-        width: 1000px;
-        margin-left: 60px;
+        width: 900px;
+        margin-left: 80px;
     }
     .line{
-        width: 880px;
-        margin-left: 100px;
+        width: 840px;
+        margin-left: 110px;
     }
     .privacy{
         margin-left: 130px;
