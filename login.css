@@ -251,9 +251,12 @@ h4{
     .navbar{
         width: 1080px;
         margin: auto;
-        height: 60px;
+        height: 80px;
         display: flex;
         flex-wrap: wrap;
+    }
+    .logo{
+        margin-top: 3px;
     }
     .search{
         width: 200px;

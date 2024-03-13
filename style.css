@@ -575,9 +575,12 @@ body{
     .navbar{
         width: 1020px;
         margin: auto;
-        height: 60px;
+        height: 80px;
         display: flex;
         flex-wrap: wrap;
+    }
+    .logo{
+        margin-top: 3px;
     }
     .search{
         width: 200px;
@@ -679,6 +682,9 @@ body{
         display: flex;
         flex-wrap: wrap;
     }
+    .logo{
+        margin-top: 5px;
+    }
     .search{
         width: 200px;
         height: 27px;
@@ -708,12 +714,13 @@ body{
         height: 100px;
     }
     .booking .wayToBook{
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 200;
     }
     .book1 h2{
         width: 36px;
         height: 32px;
+        text-align: center;
     }
     .books{
         left: 100px;
