@@ -656,7 +656,7 @@ body{
     .book1 h2{
         width: 40px;
         height: 36px;
-        padding-top: 2px;
+        padding-top: 5px;
     }
     
     /* Section3 */
@@ -671,10 +671,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .side4 p {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 10px;
     }
 
@@ -815,7 +815,7 @@ body{
     .book1 h2{
         width: 40px;
         height: 36px;
-        padding-top: 2px;
+        padding-top: 4px;
     }
     
     /* Section3 */
