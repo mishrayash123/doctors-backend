@@ -12,7 +12,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
     margin: auto;
     height: 60px;
@@ -93,119 +92,32 @@ body{
     color: black;
 }
 
-/* Heading */
-.head{
-    text-align: center;
-    flex-wrap: wrap;
-    width: 800px;
-    margin: 50px auto;
+/* Services Section */
+.our-services{
+    width: 1300px;
+    margin: 100px 0;
 }
-.head p{
+.service-heading h2{
     font-size: 30px;
+    text-align: center;
     color: #007569;
 }
-#head-info{
-    font-size: 24px;
-    margin-top: 10px;
-    color: rgb(150, 148, 148);
-}
-
-/* Tabs Section */
-.tab{
-    margin: 30px 120px;
-    width: 500px;
-    height: 50px;
-    border: none;
-}
-.tab button{
-    width: auto;
-    height: 30px;
-    cursor: pointer;
-    border: 1px solid rgb(161, 160, 160);
-    padding: 0 20px;
-    margin: 0 10px;
-    border-radius: 50px;
-}
-.tab button a{
-    text-decoration: none;
-    color: black;
-}
-.selected{
-    background-color: #276A7B;
-}
-
-
-/* Container */
-.doctors-container{
-    margin-left: 40px;
-}
-.doctors-info{
+.main-services{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    margin: 60px 100px;
+    gap: 20px;
 }
-.doctors-list{
-    display: flex;
-    border: 1px solid #d0e7e5;
-    background-color: rgb(203, 223, 221);
-    padding: 10px;
-    margin: 10px auto;
-    border-radius: 5px;
-    width: 480px;
-    height: 180px;
-}
-.doctor-img{
-    padding: 0 30px;
-}
-.about-doctor{
-    margin-top: 8px;
-    margin-left: 25px;
-}
-#name{
-    font-size: 26px;
-}
-#about-name{
-    margin-top: 10px;
-    flex-wrap: wrap;
-    color: rgb(141, 139, 139);
-}
-.book{
-    font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 50px;
-    align-items: center;
-    bottom: 20px;
-}
-.book button{
-    width: 80px;
-    height: 30px;
-    font-weight: bold;
-    background-color: #276A7B;
-    border: none;
-    border-radius: 10px;
-}
-.book button a{
-    text-decoration: none;
-    color: white;
-}
-.checked {
-	color: orange;
-}
-.more-info button{
-    width: 80px;
-    height: 30px;
-    border: 1px solid #007569;
-    background-color: white;
-    border-radius: 5px;
-    margin-top: 80px;
-    margin-left: 650px;
-    margin-bottom: 30px;
-}
-.more-info button a{
-    text-decoration: none;
-    color: black;
+.about-service{
+    margin: 10px 10px;
+	width: 200px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px 18px;
+	box-shadow: 0 5px 10px #a5cac6;
+    background-color: #d6ebe9;
+	cursor: default;
 }
 
 /* Footer */
@@ -282,11 +194,10 @@ body{
     color: rgb(216, 216, 216);
 }
 
-
 @media only screen and (min-width:765px) and (max-width:1130px) {
 
     .navbar{
-        width: 1080px;
+        width: 1020px;
         margin: auto;
         height: 80px;
         display: flex;
@@ -300,23 +211,12 @@ body{
         height: 27px;
         left: 40px;
     }
-    .head{
-        width: 800px;
-        margin-left: 120px;
-    }
-    .doctors-info {
-        align-items: center;
-        flex-direction: column;
-        padding-top: 20px;
-    }
-    .book{
-        gap: 40px;
-    }
-    .more-info button{
-        margin: 60px 500px;
+    .our-services{
+        width: 900px;
+        margin-left: 60px;
     }
     .footer{
-        width: 1080px;
+        width: 1020px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
@@ -326,11 +226,11 @@ body{
         margin-left: 100px;
     }
     .line{
-        width: 820px;
+        width: 760px;
         margin-left: 100px;
     }
     .privacy{
-        margin-left: 110px;
+        margin-left: 90px;
     }
 
 }
@@ -338,58 +238,41 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 1080px;
+        width: 890px;
         margin: auto;
         height: 100px;
         display: flex;
         flex-wrap: wrap;
     }
     .logo{
+        margin-left: 10px;
         margin-top: 5px;
     }
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 10px;
     }
-    .head{
+    .our-services{
         width: 800px;
-        margin-left: 120px;
-    }
-    .tab{
-        padding: 15px;
-    }
-    .tab button{
-        height: 40px;
-    }
-    .doctors-info {
-        margin-top: 20px;
-        margin-left: 240px;
-        flex-direction: column;
-        padding-top: 50px;
-    }
-    .book{
-        gap: 40px;
-    }
-    .more-info button{
-        margin: 60px 500px;
+        margin-left: 30px;
     }
     .footer{
-        width: 1080px;
+        width: 890px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
     }
     .footer-container{
         width: 1000px;
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .line{
-        width: 820px;
-        margin-left: 100px;
+        width: 760px;
+        margin-left: 40px;
     }
     .privacy{
-        margin-left: 110px;
+        margin-left: 30px;
     }
 
 }

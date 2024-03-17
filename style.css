@@ -51,16 +51,33 @@ body{
     align-items: center;  
 }
 #items ul{
+    position: relative;
     display: flex;
     list-style: none;
     color: white;
 }
 #items ul li{
+    position: relative;
+    display: inline-block;
+    list-style: none;
     margin: 0 20px;
 }
 #items ul li a{
     text-decoration: none;
     color: white;
+}
+#items ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+#items ul li:hover::after{
+    width: 100%;
 }
 .btn{
     width: 80px;
@@ -140,9 +157,9 @@ body{
 
 /* Section2 */
 .booking {
-    width: 1050px;
+    width: 1100px;
 	height: 230px;
-	margin: 80px 140px;
+	margin: 80px 120px;
     background-image: linear-gradient(#007569, #96c2bd);
 	border-radius: 30px;
     position: relative;
@@ -199,6 +216,9 @@ body{
 }
 
 /* Section3 */
+.section3{
+    width: 1300px;
+}
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -250,6 +270,7 @@ body{
 
 /* Section4 */
 .section4{
+    width: 1300;
     margin-top: 60px;
 }
 .head1{
@@ -262,6 +283,9 @@ body{
     font-size: 29px;
     color: #276A7B;
     font-weight: bolder;
+}
+.doctors-container1{
+    margin: 0 130px;
 }
 .doctors-info1{
     display: flex;
@@ -337,6 +361,7 @@ body{
 
 /* Section5 */
 .section5{
+    width: 1300;
     margin-top: 60px;
 }
 .head{
@@ -355,12 +380,14 @@ body{
     color: rgb(179, 176, 176);
 }
 .doctors-container{
-    margin: 0 130px;
+    width: 1000px;
+    margin: 0 160px;
 }
 .doctors-info{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .doctors-list{
     display: flex;
@@ -432,11 +459,13 @@ body{
 }
 
 /* Section6 */
+.section6{
+    width: 1300px;
+}
 .review{
     display: flex;
-    /* justify-content: center; */
     margin-top: 80px;
-    margin-left: 160px;
+    margin-left: 140px;
 }
 .user-review h5{
     font-size: 30px;
@@ -465,6 +494,9 @@ body{
 }
 
 /* Section7 */
+.section7{
+    width: 1300px;
+}
 .container3{
     display: flex;
     justify-content: space-evenly;
@@ -486,7 +518,7 @@ body{
 }
 .box p{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: start;
     color: #979696;
     line-height: 20px;
@@ -588,71 +620,125 @@ body{
         left: 40px;
     }
 
+    /* Section1 */
     .side-container{
-        margin-left: 60px;
+        margin-top: 60px;
+        margin-left: 40px;
     }
     .side-container h1{
-        font-size: 30px;
+        font-size: 32px;
     }
     .side-image {
         width: 500px;
-        height: 540px;
+        height: 550px;
         margin-top: 10px;
-        margin-left: 20px;
+        margin-left: 50px;
     }
+
+    /* Section2 */
     .booking {
-        margin-left: 60px;
-        width: 900px;
+        margin-left: 30px;
+        width: 960px;
         height: 200px;
+    }
+    .books{
+        left: 160px;
     }
     .booking .wayToBook .book1 {
         margin: 80px 5px;
-        width: 140px;
-        height: 100px;
+        width: 180px;
+        height: 120px;
     }
     .booking .wayToBook{
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 200;
     }
     .book1 h2{
-        width: 38px;
+        width: 40px;
         height: 36px;
+        padding-top: 2px;
     }
-    .books{
-        left: 140px;
+    
+    /* Section3 */
+    .section3{
+        width: 980px;
     }
     .container{
-        margin-left: 10px;
+        margin-left: -30px;
     }
     .side-img1{
-        width: 400px;
-        height: 400px;
+        width: 450px;
+        height: 450px;
     }
     .side4 h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
     .side4 p {
-        font-size: 16px;
-        padding-top: 5px;
+        font-size: 18px;
+        padding-top: 10px;
     }
-    .head1 p {
-        font-size: 26px;
+
+    /* Section4 */
+    .section4{
+        width: 980;
+    }
+    .head1{
+        margin-left: 120px;
+    }
+    .doctors-container1{
+        width: 800px;
+        margin-left: 120px;
+    }
+    .doctors-info1{
+        width: 800px;
+        display: flex;
+        gap: 5px;
+    }
+
+    /* Section5 */
+    .section5{
+        width: 980;
+    }
+    .head{
+        margin-left: 120px;
+    }
+    .doctors-container{
+        width: 1000px;
+        margin-left: 10px;
+    }
+    .doctors-info{
+        display: flex;
+        gap: 5px;
+    }
+    .doctors-list{
+        width: 430px;
+    }
+
+    /* Section6 */
+    .section6{
+        width: 980px;
     }
     .review{
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .review-button{
-        margin-left: 100px;
+        margin-left: 350px;
+    }
+
+    /* Section7 */
+    .section7{
+        width: 980px;
+        margin-left: -6px;
     }
     .container3{
         display: flex;
-        justify-content: space-around;
         gap: 40px;
-        margin-left: 50px;
     }
     .box {
-        width: 280px;
+        width: 300px;
     }
+
+    /* Footer */
     .footer{
         width: 1020px;
         height: 220px;
@@ -660,15 +746,17 @@ body{
         flex-wrap: wrap;
     }
     .footer-container{
+        display: flex;
+        gap: 30px;
         width: 1000px;
-        margin-left: 100px;
+        margin-left: 120px;
     }
     .line{
         width: 760px;
-        margin-left: 100px;
+        margin-left: 120px;
     }
     .privacy{
-        margin-left: 90px;
+        margin-left: 110px;
     }
 
 }
@@ -676,7 +764,7 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 890px;
+        width: 1010px;
         margin: auto;
         height: 100px;
         display: flex;
@@ -690,70 +778,99 @@ body{
         height: 27px;
         left: 10px;
     }
+
+    /* Section1 */
     .side-container{
-        margin-top: 40px;
+        margin-top: 60px;
         margin-left: 40px;
     }
     .side-container h1{
-        font-size: 30px;
+        font-size: 32px;
     }
     .side-image {
-        width: 430px;
-        height: 460px;
-        margin-top: 20px;
-        margin-left: 10px;
+        width: 500px;
+        height: 550px;
+        margin-top: -10px;
+        margin-left: 30px;
     }
+
+    /* Section2 */
     .booking {
-        margin-left: 40px;
-        width: 820px;
+        margin-left: 30px;
+        width: 940px;
         height: 200px;
+    }
+    .books{
+        left: 150px;
     }
     .booking .wayToBook .book1 {
         margin: 80px 0;
-        width: 150px;
-        height: 100px;
+        width: 180px;
+        height: 120px;
     }
     .booking .wayToBook{
         font-size: 15px;
         font-weight: 200;
     }
     .book1 h2{
-        width: 36px;
-        height: 32px;
-        text-align: center;
+        width: 40px;
+        height: 36px;
+        padding-top: 2px;
     }
-    .books{
-        left: 100px;
+    
+    /* Section3 */
+    .section3{
+        width: 980px;
     }
     .container{
-        margin-left: -10px;
+        margin-left: -30px;
     }
     .side-img1{
-        width: 400px;
-        height: 400px;
+        width: 450px;
+        height: 450px;
     }
     .side4 h1 {
-        font-size: 21px;
+        font-size: 32px;
     }
     .side4 p {
-        font-size: 15px;
-        padding-top: 3px;
+        font-size: 18px;
+        padding-top: 10px;
     }
-    .head1 p {
-        font-size: 27px;
-        margin-left: 40px;
+
+    /* Section4 */
+    .section4{
+        width: 850;
+    }
+    .head1{
+        margin-left: 100px;
+    }
+    .doctors-container1{
+        margin-left: 100px;
     }
     .doctors-info1{
-        flex-direction: column;
-        margin-left: 110px;
+        width: 800px;
+        display: flex;
+        gap: 5px;
     }
-    .doctors-info {
-        margin-left: 50px;
-        flex-direction: column;
+
+    /* Section5 */
+    .section5{
+        width: 850;
+    }
+    .head{
+        margin-left: 120px;
+    }
+    .doctors-container{
+        width: 950px;
+        margin-left: 30px;
+    }
+
+    /* Section6 */
+    .section6{
+        width: 990px;
     }
     .review{
-        flex-direction: column;
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .user-review h5{
         font-size: 20px;
@@ -761,33 +878,40 @@ body{
     }
     .review-button{
         display: flex;
-        margin-left: -20px;
+        margin-top: -15px;
+        margin-left: 350px;
     }
-    .container3{
-        flex-direction: column;
-        margin-left: 150px;
+
+    /* Section7 */
+    .section7{
+        width: 1020px;
+        margin-left: -25px;
     }
     .box {
-        width: 280px;
-        padding: 40px;
+        width: 300px;
+        padding: 20px;
         font-size: large;
     }
+
+    /* Footer */
     .footer{
-        width: 890px;
+        width: 1010px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
     }
     .footer-container{
+        display: flex;
+        gap: 30px;
         width: 1000px;
-        margin-left: 50px;
+        margin-left: 110px;
     }
     .line{
-        width: 760px;
-        margin-left: 40px;
+        width: 770px;
+        margin-left: 100px;
     }
     .privacy{
-        margin-left: 30px;
+        margin-left: 90px;
     }
 
 }

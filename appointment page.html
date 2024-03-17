@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="appointment page.css">
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <h1 class="logo">Doctor+</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items">
+            <div id="items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <button class="btn"><a href="login.html">Login</a></button>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Main Section -->
+    <div class="main">
+        <p class="title">Book Your Appointment</p>
+        <p class="title-info">
+            Great doctor if you nedd your family 
+            memeber to get effective immediate <br>
+            assistance, emergency treatment or a simple consultation
+        </p>
+        <div class="appointment-card">
+            <p class="title1">Book Your Appointment</p>
+            <form class="form" action="#">
+                <div class="namebox">
+                    <label for="#" id="title2">Patient Name</label>
+                    <input type="text" placeholder="Patient Name: " required>
+                </div>
+                <div class="details">
+                    <div>
+                        <label for="#" id="title2"> Departmenet</label>
+                        <select id="box">
+                            <option>Select Departmenet</option>
+                            <option value="1">Dentist</option>
+                            <option value="2">Neoro</option>
+                            <option value="3">Consultant</option>
+                            <option value="4">Sergeon</option>
+                            <option value="5">Physicians</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="#" id="title2"> Doctor</label>
+                        <select id="box">
+                            <option>Select Doctor</option>
+                            <option value="1">Dr John</option>
+                            <option value="2">Dr Nadeem</option>
+                            <option value="3">Dr Simran</option>
+                            <option value="4">Dr Ema Merin</option>
+                            <option value="5">Dr Stone</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="personal-info">
+                    <div>
+                        <label for="#"  id="title2">Your Email</label>
+                        <input id="box1" type="email" placeholder="Your Email " required>
+                    </div>
+                    <div>
+                        <label for="#" id="title2">Your Phone</label>
+                        <input id="box1" type="number" placeholder="Your Phone" required>
+                    </div>
+                </div>
+    
+                <div class="opinion">
+                    <label for="#" id="title2">Comments</label>
+                    <input id="box2" cols="30" rows="10" placeholder="Your Message:">
+                </div>
+
+                <button><a href="http://127.0.0.1:5503/payment.html">Book Appointment</a></button>
+            </form>
+        </div> 
+    </div>
+    <!-- Main Section Ends -->
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h1 class="footer-logo">Doctor+</h1>
+            <p id="thank-note">
+                Thank you for visiting my website, 
+                and I look forward to being a part 
+                of your wellness journey. Let's 
+                thrive together!
+            </p>
+            <div class="contact">
+                <div id="mobile">
+                    <a href="#"><img src="assets/download (3).png" alt="call-logo" width="20px"></a>
+                    <p>+91-1234567890</p>
+                </div>
+                <div id="mail">
+                    <a href="#"><img src="assets/download (4).png" alt="mail-logo" width="20px"></a>
+                    <p>contact@gmail.com</p>
+                </div>
+                <div id="social-media">
+                    <a href="#"><img src="assets/download (1).png" alt="facebook-logo" width="26px"></a>
+                    <a href="#"><img src="assets/download.png" alt="instagram-logo" width="26px"></a>
+                    <a href="#"><img src="assets/download (2).png" alt="youtube-logo" width="26px"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-privacy">
+            <div class="line">
+                <hr>
+            </div>
+            <div class="privacy">
+                <p>@Copyright 2023. All Rights Reserved</p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                    <a href="#">Legal Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

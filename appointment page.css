@@ -93,197 +93,140 @@ body{
     color: black;
 }
 
-/* User Profile */
-.user-profile {
-    margin: 50px 120px;
-    font-size: 25px;
-    font-weight: bold;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-    color: #007569;
-}
-.user-profile a {
-    margin-top: 10px;
-    color: #007569;
-}
-
-/* Container */
-.user-container{
-    margin: 50px 180px;
-}
-.user-info{
-    display: flex;
-}
-.doctor{
-    border: 1px solid #007569;
-    background-color: #007569;
-    color: white;
-    padding: 30px;
-    margin: 10px auto;
-    border-radius: 40px;
-    width: 280px;
-    height: 200px;
+/* Main Section */
+.title{
+    width: 500px;
+    height: 30px;
     text-align: center;
-    box-shadow: 0 5px 20px #007569;
+    font-size: 30px;
+    color: #007569;
+    margin-top: 50px;
+    margin-left: 420px;
+}
+.title-info{
+    width: 600px;
+    height: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: #363636;
+    margin-left: 360px;
+}
+.appointment-card{
+    width: 700px;
+    height: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 330px;
+    border: 1px solid #08ac9b;
+    background-color: #eaebeb;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #bbe2de;
 	cursor: default;
 }
-.img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-#name{
-    margin: 5px 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-.doctor-details{
-    margin: 50px 20px;
-}
-.data{
-    display: flex;
-    align-items: center;
-    margin: 12px;
-    gap: 10px;
-}
-.data svg{
-    color: #007569;
-}
-#about{
-    color: rgb(121, 119, 119);
-    font-weight: 600;
-}
-.appointment{
-    margin: 0 140px;
-}
-.appointment-list{
-    width: 500px;
+.title1{
+    text-align: center;
     height: 40px;
-    border: 3px solid #276A7B;
-    color: black;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 20px;
-    margin-top: 30px;
+    font-size: 20px;
+    background-color: #007569;
+    color: white;
+    padding-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-#test{
+.form{
+    margin: 40px 20px;
+}
+#title2{
     font-size: 16px;
 }
-#doctor-name{
-    color: rgb(121, 119, 119);
-    font-size: 12px;
+.namebox input{
+    width: 650px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 248);
+    padding-left: 10px;
+    box-shadow: 0 5px 10px #cbcccc;
+	cursor: default;
 }
-#date{
-    margin-top: 6px;
-    color: rgb(82, 82, 82);
+.details{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-#history{
-    font-size: 18px;
-    margin-top: 10px;
-    margin-left: 190px;
-    color: #007569;
+#box{
+    width: 250px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 248);
+    padding: 0 10px;
+    box-shadow: 0 5px 10px #cbcccc;
+	cursor: default;
 }
-.open-button{
-    width: 160px;
-    height: 38px;
-    font-size: 15px;
-    cursor: pointer;
+.personal-info{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#box1{
+    width: 240px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 248);
+    padding-left: 10px;
+    box-shadow: 0 5px 10px #cbcccc;
+	cursor: default;
+}
+.opinion {
+    margin-top: 30px;
+    width: 97%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items:flex-start;
+
+    input
+    {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: .5rem .5rem;
+        padding-bottom: 8rem;
+        box-shadow: 0 5px 10px #cbcccc;
+	    cursor: default;
+        border-radius: 5px;
+    }
+}
+.appointment-card button{
     border: 1px solid #276A7B;
     background-color: #276A7B;
-    padding: 10px 20px;
-    margin-top: 30px;
-    margin-left: 380px;
-    border-radius: 8px;
-    color: white;
-}
-
-/* Profile Update Popup*/
-.form-popup {
-    display: none;
-    border: 3px solid #f1f1f1;
-    background-color: #f1f1f1;
-    z-index: 9;
-}
-.nav{
-    width: auto;
-    height: 40px;
-    background-color: #276A7B;
-    text-align: center;
-    color: white;
-}
-.nav p{
-    padding-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
-}
-h4{
-    margin-left: 40px;
-    margin-top: 30px;
-}
-.form-container {
-    max-width: 500px;
-    padding: 20px;
-    margin: 0 20px;
-}
-.form-container .form{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-.form-container .form input{
-    border-radius: 10px;
     width: 200px;
-}
-
-/* Full-width input fields */
-.form-container input{
-    width: 95%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    height: 40px;
+    font-weight: bolder;
     border-radius: 10px;
-    border: none;
-    background: white;
+    margin-top: 40px;
+    margin-left: 220px;
 }
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #2d8866;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-  margin: 20px 45px;
-  opacity: 0.8;
-  text-align: center;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: rgb(194, 67, 67);
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+.appointment-card button a {
+    text-decoration: none;
+    color: white;
 }
 
 
 /* Footer */
 .footer{
     width: 100%;
-    height: 220px;
+    height: 200px;
     flex-wrap: wrap;
     background-color: #007569;
 }
 .footer-container{
     width: 1000px;
-    margin: 0 240px;
+    margin: 0 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -324,17 +267,17 @@ h4{
 }
 .line{
     width: 900px;
-    margin: 0 280px;
+    margin: 0 250px;
 }
 .footer-privacy{
     width: 100%;
-    height: 60px;
-    margin-top: 30px;
+    height: 55px;
+    margin-top: 20px;
     background-color: rgb(3, 83, 74);
 }
 .privacy{
     width: 800px;
-    margin: 0 300px;
+    margin: 0 270px;
     display: flex;
     font-size: 16px;
     padding: 15px 0;
@@ -350,9 +293,8 @@ h4{
 
 
 @media only screen and (min-width:765px) and (max-width:1130px) {
-
     .navbar{
-        width: 1080px;
+        width: 1030px;
         margin: auto;
         height: 80px;
         display: flex;
@@ -366,27 +308,17 @@ h4{
         height: 27px;
         left: 40px;
     }
-    .user-profile {
-        margin: 30px 80px;
-    }
-    .user-container{
-        margin: 30px 80px;
-    }
-    .appointment{
-        margin: 0 80px;
-    }
-    .appointment-list{
-        width: 400px;
-    }
-    .open-button{
+    .title{
         margin-left: 280px;
     }
-    #history{
-        margin-left: 150px;
+    .title-info{
+        margin-left: 230px;
     }
-    
+    .appointment-card{
+        margin-left: 180px;
+    }
     .footer{
-        width: 1080px;
+        width: 1030px;
         height: 220px;
     }
     .footer-container{
@@ -423,52 +355,20 @@ h4{
         height: 27px;
         left: 40px;
     }
-    .user-info{
-        display: inline-block;
+    .title{
+        font-size: 35px;
+        margin-top: 150px;
+        margin-left: 280px;
     }
-    .doctor{
-        width: 400px;
-        height: 280px;
+    .title-info{
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left: 230px;
     }
-    .doctor-details{
-        margin: 100px 280px;
-    }
-    .img{
-        width: 180px;
-        height: 180px;
-    }
-    #name{
-        margin: 10px 0;
-        font-size: 26px;
-    }
-    .data svg{
-        width: 30px;
-        color: #007569;
-    }
-    #about{
-        color: rgb(121, 119, 119);
-        font-weight: 900;
-    }
-    .user-profile {
-        margin: 80px 40px;
-        font-size: 30px;
-    }
-    .user-container{
-        margin: 50px 60px;
-    }
-    .appointment{
-        margin: 60px 200px;
-    }
-    .appointment-list{
-        font-size: 20px;
-        width: 500px;
-        height: 56px;
-        padding-top: 10px;
-    }
-    .open-button{
-        height: 60px;
-        margin-top: 60px;
-        margin-left: 200px;
+    .appointment-card{
+        margin-top: 100px;
+        margin-left: 180px;
+        margin-bottom: 150px;
     }
     
     .footer{
