@@ -92,34 +92,77 @@ body{
     color: black;
 }
 
-/* Services Section */
-.our-services{
-    width: 1300px;
-    margin: 100px 0;
-}
-.service-heading h2{
-    font-size: 30px;
-    margin-left: 100px;
-    text-align: center;
+/* Main Section */
+.main-logo{
+    width: 500px;
+    height: 30px;
+    font-size: 28px;
+    font-weight: 600;
     color: #007569;
+    margin-top: 50px;
+    margin-left: 440px;
 }
-.main-services{
+.main-logo img{
+    margin-left: 200px;
+}
+.main-logo P{
+    margin-top: 10px;
+}
+.drcard{
+    width: 600px;
+    height: 430px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: 390px;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #bbe2de;
+	cursor: default;
+}
+.drinfo{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-left: 100px;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
 }
-.about-service{
-    margin: 10px 10px;
-	width: 200px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 20px 18px;
-	box-shadow: 0 5px 10px #a5cac6;
-    background-color: #d6ebe9;
-	cursor: default;
+.drimage{
+    border-radius: 10px;
+    border: 2px solid linear-gradient(#bbbabaf1, #c6caca, #bbbabaf1);
+    background-image: linear-gradient(#bbbabaf1, #c6caca, #bbbabaf1);
+}
+.about{
+    margin-top: -20px;
+    line-height: 26px;
+}
+#name{
+    font-size: 18px;
+    font-weight: 400;
+}
+#info{
+    color: #555555;
+}
+.appointment-time{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    line-height: 30px;
+}
+.drcard button{
+    border: 1px solid #276A7B;
+    background-color: #276A7B;
+    width: 150px;
+    height: 35px;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 220px;
+}
+.drcard button a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Footer */
@@ -196,10 +239,11 @@ body{
     color: rgb(216, 216, 216);
 }
 
+
 @media only screen and (min-width:765px) and (max-width:1130px) {
 
     .navbar{
-        width: 1020px;
+        width: 1080px;
         margin: auto;
         height: 80px;
         display: flex;
@@ -213,12 +257,14 @@ body{
         height: 27px;
         left: 40px;
     }
-    .our-services{
-        width: 900px;
-        margin-left: 60px;
+    .main-logo{
+        margin-left: 280px;
+    }
+    .drcard{
+        margin-left: 230px;
     }
     .footer{
-        width: 1020px;
+        width: 1080px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
@@ -228,11 +274,11 @@ body{
         margin-left: 100px;
     }
     .line{
-        width: 760px;
+        width: 820px;
         margin-left: 100px;
     }
     .privacy{
-        margin-left: 90px;
+        margin-left: 110px;
     }
 
 }
@@ -240,41 +286,48 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 890px;
+        width: 1080px;
         margin: auto;
         height: 100px;
         display: flex;
         flex-wrap: wrap;
     }
     .logo{
-        margin-left: 10px;
         margin-top: 5px;
     }
     .search{
         width: 200px;
         height: 27px;
-        left: 10px;
+        left: 40px;
     }
-    .our-services{
-        width: 800px;
-        margin-left: 30px;
+    .main-logo{
+        margin-top: 100px;
+        margin-left: 280px;
+    }
+    .main-logo P{
+        margin-top: 30px;
+    }
+    .drcard{
+        margin-top: 200px;
+        margin-left: 230px;
+        margin-bottom: 200px;
     }
     .footer{
-        width: 890px;
+        width: 1080px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
     }
     .footer-container{
         width: 1000px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     .line{
-        width: 760px;
-        margin-left: 40px;
+        width: 820px;
+        margin-left: 100px;
     }
     .privacy{
-        margin-left: 30px;
+        margin-left: 110px;
     }
 
 }

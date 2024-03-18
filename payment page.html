@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment page.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <h1 class="logo">Doctor+</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items">
+            <div id="items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Service</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            <button class="btn"><a href="login.html">Login</a></button>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Payment Page -->
+    <div class="payment-page">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
+        </svg></a>
+        <p>Payment Method</p>
+    </div>
+
+    <!-- Main Section --> 
+    <div class="payment-mode">
+        <div class="payment-card">
+            <div class="cards">
+                <input type="radio" id="radio">
+                <img src="assets/download (16).png" alt="Credit/Debit-Card-Logo" width="30px">
+                <p> Credit/Debit card:</p>
+            </div>
+
+            <div class="line1">
+                <hr>
+            </div>       
+    
+            <form class="card-details">
+                <div>
+                    <div class="inputbox">
+                        <fieldset>
+                            <legend> Name On Card </legend>
+                            <input type="text" placeholder="John.S">
+                        </fieldset>
+                    </div>
+
+                    <div class="inputbox">
+                        <fieldset>
+                            <legend> Expired Date </legend>
+                            <input type="number" placeholder="02/24">
+                        </fieldset>
+                    </div>
+        
+                    <div class="inputbox">
+                        <fieldset>
+                            <legend> CVC/CVV </legend>
+                            <input type="number" placeholder="321">
+                        </fieldset> 
+                    </div>
+                </div>
+                  
+                <div>
+                    <div class="inputbox">
+                        <fieldset>
+                            <legend> Card Number </legend>
+                            <input type="number" placeholder="1234 2345 6789 1234">
+                        </fieldset>  
+                    </div>
+
+                    <div class="inputbox">
+                        <fieldset>
+                            <legend> CVC/CVV </legend>
+                            <input type="number" placeholder="321">
+                        </fieldset> 
+                    </div>
+        
+                    <div class="cancel-next-btn">
+                        <button id="cancel-btn"><a href="">CANCEL</a></button>
+                        <button id="next-btn"><a href="">NEXT</a></button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="line1">
+                <hr>
+            </div>
+                
+            <div class="cards">
+                <input type="radio" id="radio">
+                <img src="assets/R.png" alt="PayPal-Logo" width="45px" height="20px"> 
+                <p>PayPal</p>
+            </div>
+
+            <div class="line1">
+                <hr>
+            </div>
+            
+            <div class="cards">
+                <input type="radio" id="radio">
+                <p>PrePayment</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main Section Ended -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <h1 class="footer-logo">Doctor+</h1>
+            <p id="thank-note">
+                Thank you for visiting my website, 
+                and I look forward to being a part 
+                of your wellness journey. Let's 
+                thrive together!
+            </p>
+            <div class="contact">
+                <div id="mobile">
+                    <a href="#"><img src="assets/download (3).png" alt="call-logo" width="20px"></a>
+                    <p>+91-1234567890</p>
+                </div>
+                <div id="mail">
+                    <a href="#"><img src="assets/download (4).png" alt="mail-logo" width="20px"></a>
+                    <p>contact@gmail.com</p>
+                </div>
+                <div id="social-media">
+                    <a href="#"><img src="assets/download (1).png" alt="facebook-logo" width="24px"></a>
+                    <a href="#"><img src="assets/download.png" alt="instagram-logo" width="24px"></a>
+                    <a href="#"><img src="assets/download (2).png" alt="youtube-logo" width="24px"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-privacy">
+            <div class="line">
+                <hr>
+            </div>
+            <div class="privacy">
+                <p>@Copyright 2023. All Rights Reserved</p>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Term of Service</a>
+                    <a href="#">Legal Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

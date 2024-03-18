@@ -244,12 +244,12 @@ body{
     margin-left: 30px;
 }
 .side4 h1 {
-    font-size: 36px;
+    font-size: 30px;
     color: #276A7B;
 	margin-bottom: 10px;
 }
 .side4 p {
-	font-size: 22px;
+	font-size: 18px;
     font-weight: bolder;
     color: #a3a3a3;
 	padding: 10px 0;
@@ -362,7 +362,7 @@ body{
 /* Section5 */
 .section5{
     width: 1300;
-    margin-top: 60px;
+    margin: auto;
 }
 .head{
     text-align: center;
@@ -381,7 +381,7 @@ body{
 }
 .doctors-container{
     width: 1000px;
-    margin: 0 200px;
+    margin-left: 200px;
 }
 .doctors-info{
     display: flex;
@@ -468,7 +468,7 @@ body{
     margin-left: 180px;
 }
 .user-review h5{
-    font-size: 30px;
+    font-size: 26px;
     color: #276A7B;
 }
 .user-review p{
@@ -671,10 +671,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .side4 p {
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 10px;
     }
 
@@ -722,6 +722,8 @@ body{
         margin-left: 50px;
     }
     .review-button{
+        display: flex;
+        margin-top: -5px;
         margin-left: 350px;
     }
     .user-review h5{
@@ -836,7 +838,7 @@ body{
         font-size: 26px;
     }
     .side4 p {
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 10px;
     }
 
@@ -881,7 +883,7 @@ body{
     }
     .review-button{
         display: flex;
-        margin-top: -15px;
+        margin-top: -14px;
         margin-left: 350px;
     }
 

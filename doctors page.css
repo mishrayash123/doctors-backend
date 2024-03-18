@@ -141,8 +141,9 @@ body{
 }
 .doctors-info{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
 }
 .doctors-list{
     display: flex;
@@ -193,6 +194,9 @@ body{
 .checked {
 	color: orange;
 }
+.more-info{
+    text-align: center;
+}
 .more-info button{
     width: 80px;
     height: 30px;
@@ -200,7 +204,6 @@ body{
     background-color: white;
     border-radius: 5px;
     margin-top: 80px;
-    margin-left: 650px;
     margin-bottom: 30px;
 }
 .more-info button a{
