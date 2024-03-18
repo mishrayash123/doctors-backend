@@ -468,12 +468,12 @@ body{
     margin-left: 180px;
 }
 .user-review h5{
-    font-size: 26px;
+    font-size: 24px;
     color: #276A7B;
 }
 .user-review p{
     width: 340px;
-    font-size: 17px;
+    font-size: 14px;
     margin-top: 10px;
     color: #646464;
 }
@@ -671,10 +671,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 26px;
+        font-size: 20px;
     }
     .side4 p {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 10px;
     }
 
@@ -723,11 +723,11 @@ body{
     }
     .review-button{
         display: flex;
-        margin-top: -5px;
-        margin-left: 350px;
+        margin-top: -20px;
+        margin-left: 360px;
     }
     .user-review h5{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* Section7 */
@@ -835,10 +835,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .side4 p {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 10px;
     }
 
@@ -878,7 +878,7 @@ body{
         margin-left: 50px;
     }
     .user-review h5{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 800px;
     }
     .review-button{
