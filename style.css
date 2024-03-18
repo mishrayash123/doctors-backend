@@ -244,13 +244,13 @@ body{
     margin-left: 30px;
 }
 .side4 h1 {
-    font-size: 30px;
+    font-size: 26px;
     color: #276A7B;
 	margin-bottom: 10px;
 }
 .side4 p {
 	font-size: 18px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #a3a3a3;
 	padding: 10px 0;
 }
@@ -468,7 +468,7 @@ body{
     margin-left: 180px;
 }
 .user-review h5{
-    font-size: 24px;
+    font-size: 20px;
     color: #276A7B;
 }
 .user-review p{
@@ -485,7 +485,7 @@ body{
     height: 33px;
     border: 1px solid black;
     margin-left: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
     background-color: white;
 }
 .review-button button a{
