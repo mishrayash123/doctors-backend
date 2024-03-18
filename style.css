@@ -719,18 +719,18 @@ body{
         width: 980px;
     }
     .review{
-        margin-left: 55px;
+        margin-left: 50px;
     }
     .review-button{
         display: flex;
-        margin-top: -15px;
+        margin-top: -10px;
         margin-left: 360px;
     }
     .user-review h5{
-        font-size: 14px;
+        font-size: 18px;
     }
     .user-review p{
-        font-size: 13px;
+        font-size: 14px;
     }
 
     /* Section7 */
@@ -881,16 +881,15 @@ body{
         margin-left: 50px;
     }
     .user-review h5{
-        font-size: 14px;
-        font-weight: 800px;
+        font-size: 18px;
     }
     .user-review p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .review-button{
         display: flex;
         margin-top: -14px;
-        margin-left: 350px;
+        margin-left: 340px;
     }
 
     /* Section7 */
