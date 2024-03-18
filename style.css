@@ -671,10 +671,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 20px;
+        font-size: 19px;
     }
     .side4 p {
-        font-size: 14px;
+        font-size: 13px;
         padding-top: 10px;
     }
 
@@ -719,15 +719,18 @@ body{
         width: 980px;
     }
     .review{
-        margin-left: 50px;
+        margin-left: 55px;
     }
     .review-button{
         display: flex;
-        margin-top: -20px;
+        margin-top: -15px;
         margin-left: 360px;
     }
     .user-review h5{
-        font-size: 20px;
+        font-size: 14px;
+    }
+    .user-review p{
+        font-size: 13px;
     }
 
     /* Section7 */
@@ -878,8 +881,11 @@ body{
         margin-left: 50px;
     }
     .user-review h5{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 800px;
+    }
+    .user-review p{
+        font-size: 12px;
     }
     .review-button{
         display: flex;
