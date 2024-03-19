@@ -27,7 +27,7 @@ body{
     height: 27px;
     display: flex;
     position: relative;
-    left: 100px;
+    left: 80px;
 }
 .input{
     width: 100%;
@@ -354,7 +354,7 @@ h4{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
     .user-profile {
         margin: 30px 80px;
@@ -403,7 +403,7 @@ h4{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
     .user-info{
         display: inline-block;

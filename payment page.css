@@ -27,7 +27,7 @@ body{
     height: 27px;
     display: flex;
     position: relative;
-    left: 100px;
+    left: 80px;
 }
 .input{
     width: 100%;
@@ -291,7 +291,7 @@ input:focus{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
     .payment-page {
         margin: 30px 60px;
@@ -340,7 +340,7 @@ input:focus{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
     .payment-page {
         margin: 30px 50px;

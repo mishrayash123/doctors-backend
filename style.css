@@ -27,7 +27,7 @@ body{
     height: 27px;
     display: flex;
     position: relative;
-    left: 100px;
+    left: 80px;
 }
 .input{
     width: 100%;
@@ -99,7 +99,7 @@ body{
 }
 .side-container{
 	margin-top: 80px;
-    margin-left: 140px;
+    margin-left: 120px;
     width: 580px;
 }
 .side-container h1{
@@ -249,8 +249,8 @@ body{
 	margin-bottom: 10px;
 }
 .side4 p {
-	font-size: 18px;
-    font-weight: bold;
+	font-size: 20px;
+    font-weight: 600;
     color: #a3a3a3;
 	padding: 10px 0;
 }
@@ -468,12 +468,12 @@ body{
     margin-left: 180px;
 }
 .user-review h5{
-    font-size: 20px;
+    font-size: 22px;
     color: #276A7B;
 }
 .user-review p{
     width: 340px;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
     color: #646464;
 }
@@ -485,7 +485,7 @@ body{
     height: 33px;
     border: 1px solid black;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: white;
 }
 .review-button button a{
@@ -617,7 +617,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
 
     /* Section1 */
@@ -716,21 +716,22 @@ body{
 
     /* Section6 */
     .section6{
-        width: 980px;
+        width: 1000px;
     }
     .review{
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .review-button{
         display: flex;
-        margin-top: -10px;
+        margin-top: -8px;
         margin-left: 360px;
     }
     .user-review h5{
         font-size: 18px;
     }
     .user-review p{
-        font-size: 14px;
+        width: 380px;
+        font-size: 16px;
     }
 
     /* Section7 */
@@ -784,7 +785,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 10px;
+        left: 20px;
     }
 
     /* Section1 */
@@ -838,10 +839,10 @@ body{
         height: 450px;
     }
     .side4 h1 {
-        font-size: 24px;
+        font-size: 25px;
     }
     .side4 p {
-        font-size: 14px;
+        font-size: 18px;
         padding-top: 10px;
     }
 
@@ -884,11 +885,11 @@ body{
         font-size: 18px;
     }
     .user-review p{
-        font-size: 14px;
+        font-size: 15px;
     }
     .review-button{
         display: flex;
-        margin-top: -14px;
+        margin-top: -8px;
         margin-left: 340px;
     }
 

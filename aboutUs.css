@@ -27,7 +27,7 @@ body{
     height: 27px;
     display: flex;
     position: relative;
-    left: 100px;
+    left: 80px;
 }
 .input{
     width: 100%;
@@ -228,7 +228,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 40px;
+        left: 20px;
     }
     .side-img{
         width: 400px;
@@ -285,7 +285,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 10px;
+        left: 20px;
     }
     .aboutus-container{
         display: inline-block;
