@@ -774,7 +774,7 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 1080px;
+        width: 1010px;
         margin: auto;
         height: 100px;
         display: flex;
@@ -907,7 +907,7 @@ body{
 
     /* Footer */
     .footer{
-        width: 1080px;
+        width: 1010px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;
