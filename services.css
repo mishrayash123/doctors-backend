@@ -60,7 +60,7 @@ body{
     position: relative;
     display: inline-block;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 14px;
 }
 #items ul li a{
     text-decoration: none;
@@ -86,6 +86,7 @@ body{
     border: none;
     font-weight: bold;
     border-radius: 5px;
+    margin-left: 8px;
 }
 .btn a{
     text-decoration: none;
@@ -211,7 +212,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 20px;
+        left: 10px;
     }
     .our-services{
         width: 900px;
@@ -240,15 +241,14 @@ body{
 @media only screen and (min-width:300px) and (max-width:765px){
 
     .navbar{
-        width: 890px;
+        width: 1080px;
         margin: auto;
         height: 100px;
         display: flex;
         flex-wrap: wrap;
     }
     .logo{
-        margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 3px;
     }
     .search{
         width: 200px;
@@ -260,7 +260,7 @@ body{
         margin-left: 30px;
     }
     .footer{
-        width: 890px;
+        width: 1080px;
         height: 220px;
         display: flex;
         flex-wrap: wrap;

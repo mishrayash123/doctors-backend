@@ -61,7 +61,7 @@ body{
     position: relative;
     display: inline-block;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 14px;
 }
 #items ul li a{
     text-decoration: none;
@@ -87,6 +87,7 @@ body{
     border: none;
     font-weight: bold;
     border-radius: 5px;
+    margin-left: 8px;
 }
 .btn a{
     text-decoration: none;
@@ -301,7 +302,7 @@ body{
     .search{
         width: 200px;
         height: 27px;
-        left: 20px;
+        left: 10px;
     }
     .head{
         width: 800px;
@@ -348,7 +349,7 @@ body{
         flex-wrap: wrap;
     }
     .logo{
-        margin-top: 5px;
+        margin-top: 3px;
     }
     .search{
         width: 200px;
