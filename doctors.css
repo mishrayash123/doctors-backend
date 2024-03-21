@@ -133,6 +133,7 @@ body{
 }
 .selected{
     background-color: #276A7B;
+    color: white;
 }
 
 
