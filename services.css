@@ -96,7 +96,7 @@ body{
 /* Services Section */
 .our-services{
     width: 1300px;
-    margin: 100px 0;
+    margin: 60px 0;
 }
 .service-heading h2{
     font-size: 30px;
@@ -108,7 +108,7 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 100px;
     gap: 20px;
 }
@@ -216,7 +216,8 @@ body{
     }
     .our-services{
         width: 900px;
-        margin-left: 60px;
+        margin-top: 50px;
+        margin-left: 35px;
     }
     .footer{
         width: 1020px;
@@ -257,7 +258,8 @@ body{
     }
     .our-services{
         width: 800px;
-        margin-left: 30px;
+        margin-top: 60px;
+        margin-left: 80px;
     }
     .footer{
         width: 1080px;

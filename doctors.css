@@ -114,7 +114,7 @@ body{
 /* Tabs Section */
 .tab{
     margin: 30px 120px;
-    width: 500px;
+    width: 800px;
     height: 50px;
     border: none;
 }
@@ -369,7 +369,7 @@ body{
     }
     .doctors-info {
         margin-top: 20px;
-        margin-left: 240px;
+        margin-left: 260px;
         flex-direction: column;
         padding-top: 50px;
     }
