@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment History Page</title>
-    <link rel="stylesheet" href="appointment history.css">
+    <title>Patient Health History</title>
+    <link rel="stylesheet" href="patienthealth history.css">
 </head>
 <body>
-
+    
     <!-- Navbar Section -->
     <div class="navbar">
         <h1 class="logo">Doctor+</h1>
@@ -41,7 +41,7 @@
         <a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
         </svg></a>
-        <p>Appointment</p>
+        <p>PatientHealth History</p>
     </div>
 
     <!-- Container -->
@@ -49,9 +49,30 @@
         <div class="user-info">
             <div class="profile">
                 <div class="doctor">
-                    <img src="assets/Best2BWordPress2BTheme2BFor2BResume2BCV2B25262BPortfolio2BWebsite2B2-min-2.png" alt="doctor-img" class="img">
-                    <p id="name">ALAN</p>
-                    <p id="age">35 Years Old</p>
+                    <div class="doctor-bio">
+                        <img src="./assets/Best2BWordPress2BTheme2BFor2BResume2BCV2B25262BPortfolio2BWebsite2B2-min-2.png" alt="doctor-img" class="img">
+                        <p id="name">ALAN</p>
+                        <p id="age">35 Years Old</p>
+                    </div>
+                    <div class="doctor-health">
+                        <div id="doctor-health">
+                            <div>
+                                <p>Blood</p>
+                                <p>B+ve</p>
+                            </div>
+                            <div>
+                                <p>Weight</p>
+                                <p>73.8kg</p>
+                            </div>
+                            <div>
+                                <p>Height</p>
+                                <p>175</p>
+                            </div>
+                        </div>
+                        
+                        <button><a href="#">HEALTHY</a></button>
+                        
+                    </div>
                 </div>
                 <div class="doctor-details">
                     <div class="data">
@@ -136,25 +157,58 @@
                     </form>
                 </div>
 
+                <div class="health-history">
+                    <div class="health-history1">
+                        <div id="water-percent">
+                            <div id="health-report">
+                                <p>Water</p>
+                                <button>93%</button>
+                            </div>
+                            <p>93%</p>
+                        </div>
+                        <div id="hemoglobin">
+                            <div id="health-report">
+                                <p>Hemoglobin</p>
+                                <button>19.5 g/dl</button>
+                            </div>
+                            <!-- <p>93%</p> -->
+                        </div>
+                    </div>
+                    <div class="health-history1">
+                        <div id="heartbeat">
+                            <div id="health-report">
+                                <p>Heartbeat</p>
+                                <button>80 bpm</button>
+                            </div>
+                            <!-- <p>93%</p> -->
+                        </div>
+                        <div id="sugar-level">
+                            <div id="health-report">
+                                <p>Sugar Level</p>
+                                <button>90%</button>
+                            </div>
+                            <p>90%</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Appointments List -->
-                <div class="appointment-list">
-                    <div class="button">
-                        <p id="test">Covid Test</p>
-                        <p id="doctor-name">Dr Zeena</p>
+                <div class="appointment-list-info">
+                    <div class="appointment-list">
+                        <div class="button">
+                            <p id="test">Covid Test</p>
+                            <p id="doctor-name">Dr Zeena</p>
+                        </div>
+                        <p id="date">30 March</p>
                     </div>
-                    <p id="date">30 March</p>
-                </div>
-                <div class="appointment-list">
-                    <div class="button">
-                        <p id="test">Dentist</p>
-                        <p id="doctor-name">Dr Calvin Carlo</p>
+                    <div class="appointment-list">
+                        <div class="button">
+                            <p id="test">Dentist</p>
+                            <p id="doctor-name">Dr Calvin Carlo</p>
+                        </div>
+                        <p id="date">31 May</p>
                     </div>
-                    <p id="date">31 May</p>
                 </div>
-
-
-                <p id="history">Appointment History</p>
-
             </div>
         </div>
     </div>
@@ -172,17 +226,17 @@
             </p>
             <div class="contact">
                 <div id="mobile">
-                    <a href="#"><img src="assets/download (3).png" alt="call-logo" width="20px"></a>
+                    <a href="#"><img src="./assets/download (3).png" alt="call-logo" width="20px"></a>
                     <p>+91-1234567890</p>
                 </div>
                 <div id="mail">
-                    <a href="#"><img src="assets/download (4).png" alt="mail-logo" width="20px"></a>
+                    <a href="#"><img src="./assets/download (4).png" alt="mail-logo" width="20px"></a>
                     <p>contact@gmail.com</p>
                 </div>
                 <div id="social-media">
-                    <a href="#"><img src="assets/download (1).png" alt="facebook-logo" width="26px"></a>
-                    <a href="#"><img src="assets/download.png" alt="instagram-logo" width="26px"></a>
-                    <a href="#"><img src="assets/download (2).png" alt="youtube-logo" width="26px"></a>
+                    <a href="#"><img src="./assets/download (1).png" alt="facebook-logo" width="26px"></a>
+                    <a href="#"><img src="./assets/download.png" alt="instagram-logo" width="26px"></a>
+                    <a href="#"><img src="./assets/download (2).png" alt="youtube-logo" width="26px"></a>
                 </div>
             </div>
         </div>
@@ -205,6 +259,6 @@
 
 
     <script src="script.js"></script>
-    
+
 </body>
 </html>

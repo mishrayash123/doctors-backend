@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <link rel="stylesheet" href="user profile.css">
+    <title>Appointment History Page</title>
+    <link rel="stylesheet" href="appointment history.css">
 </head>
 <body>
-    
+
     <!-- Navbar Section -->
     <div class="navbar">
         <h1 class="logo">Doctor+</h1>
@@ -28,7 +28,7 @@
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="register.html">Register</a></li>
                     <li><a href="doctors.html">Doctors</a></li>
-                    <li><a href="user profile.css">Profile</a></li>
+                    <li><a href="user profile.html">Profile</a></li>
                 </ul>
             </div>
             <button class="btn"><a href="login.html">Login</a></button>
@@ -38,10 +38,10 @@
 
     <!-- User Profile -->
     <div class="user-profile">
-        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+        <a href="profile.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5"/>
         </svg></a>
-        <p>User Profile</p>
+        <p>Appointment</p>
     </div>
 
     <!-- Container -->
@@ -49,7 +49,7 @@
         <div class="user-info">
             <div class="profile">
                 <div class="doctor">
-                    <img src="assets/Best2BWordPress2BTheme2BFor2BResume2BCV2B25262BPortfolio2BWebsite2B2-min-2.png" alt="doctor-img" class="img">
+                    <img src="./assets/Best2BWordPress2BTheme2BFor2BResume2BCV2B25262BPortfolio2BWebsite2B2-min-2.png" alt="doctor-img" class="img">
                     <p id="name">ALAN</p>
                     <p id="age">35 Years Old</p>
                 </div>
@@ -93,49 +93,8 @@
                     </div>
                 </div>
             </div>
+
             <div class="appointment">
-                <div class="appointment-details">
-                    <div class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week" viewBox="0 0 16 16">
-                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                        </svg>
-                        <p>Appointments</p>
-                    </div>
-                    <div class="button">
-                        <p>|</p>
-                        <a href="appointment history.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                        </svg></a>
-                    </div>
-                </div>
-                <div class="appointment-details">
-                    <div class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
-                            <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7"/>
-                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                        </svg>
-                        <p>Saved Doctors</p>
-                    </div>
-                    <div class="button">
-                        <p>|</p>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                        </svg></a>
-                    </div>
-                </div>
-                <div class="appointment-details">
-                    <div class="button">
-                        <img src="assets/download (5).png" alt="" width="18" height="18">
-                        <p>Patient Health History</p>
-                    </div>
-                    <div class="button">
-                        <p>|</p>
-                        <a href="patienthealth history.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
-                        </svg></a>
-                    </div>
-                </div>
 
                 <!-- A button to open the Profile Update Popup form -->
                 <button class="open-button" onclick="openForm()">Update Settings</button>
@@ -176,6 +135,26 @@
                         <button type="submit" class="btn">Update</button>
                     </form>
                 </div>
+
+                <!-- Appointments List -->
+                <div class="appointment-list">
+                    <div class="button">
+                        <p id="test">Covid Test</p>
+                        <p id="doctor-name">Dr Zeena</p>
+                    </div>
+                    <p id="date">30 March</p>
+                </div>
+                <div class="appointment-list">
+                    <div class="button">
+                        <p id="test">Dentist</p>
+                        <p id="doctor-name">Dr Calvin Carlo</p>
+                    </div>
+                    <p id="date">31 May</p>
+                </div>
+
+
+                <p id="history">Appointment History</p>
+
             </div>
         </div>
     </div>
@@ -193,17 +172,17 @@
             </p>
             <div class="contact">
                 <div id="mobile">
-                    <a href="#"><img src="assets/download (3).png" alt="call-logo" width="20px"></a>
+                    <a href="#"><img src="./assets/download (3).png" alt="call-logo" width="20px"></a>
                     <p>+91-1234567890</p>
                 </div>
                 <div id="mail">
-                    <a href="#"><img src="assets/download (4).png" alt="mail-logo" width="20px"></a>
+                    <a href="#"><img src="./assets/download (4).png" alt="mail-logo" width="20px"></a>
                     <p>contact@gmail.com</p>
                 </div>
                 <div id="social-media">
-                    <a href="#"><img src="assets/download (1).png" alt="facebook-logo" width="24px"></a>
-                    <a href="#"><img src="assets/download.png" alt="instagram-logo" width="24px"></a>
-                    <a href="#"><img src="assets/download (2).png" alt="youtube-logo" width="24px"></a>
+                    <a href="#"><img src="./assets/download (1).png" alt="facebook-logo" width="26px"></a>
+                    <a href="#"><img src="./assets/download.png" alt="instagram-logo" width="26px"></a>
+                    <a href="#"><img src="./assets/download (2).png" alt="youtube-logo" width="26px"></a>
                 </div>
             </div>
         </div>
@@ -226,6 +205,6 @@
 
 
     <script src="script.js"></script>
-
+    
 </body>
 </html>
