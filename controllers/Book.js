@@ -1,5 +1,5 @@
 
-import  {createUser} from '../db/Booking.js';
+import  {createUser,getUsers} from '../db/Booking.js';
 
 
 
@@ -26,3 +26,13 @@ export const Booking = async (req, res) => {
       return res.sendStatus(400);
     }
   }
+
+  export const getAllBookings = async (req, res) => {
+    try {
+      const users = await getUsers();
+      return res.status(200).json(users);
+    } catch (error) {
+      console.log(error);
+      return res.sendStatus(400);
+    }
+  };
