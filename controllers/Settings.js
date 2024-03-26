@@ -1,7 +1,7 @@
 import express from 'express';
 
-import  { deleteUserById, getUsers, getUserById } from '../db/Settings.js';
-import {SettingsModel} from "../db/Settings.js"
+import  { deleteUserById, getUsers, getUserById } from '../db/users.js';
+import {UserModel} from "../db/users.js"
 
 export const getAllUsers = async (req, res) => {
   try {
@@ -29,7 +29,7 @@ export const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
     const  data  = req.body;
-    const updatedItem = await SettingsModel.findByIdAndUpdate(id.trim(), data, {
+    const updatedItem = await UserModel.findByIdAndUpdate(id.trim(), data, {
       new: true,
     });
 
