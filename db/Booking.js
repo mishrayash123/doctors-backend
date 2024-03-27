@@ -9,6 +9,11 @@ const UserSchema = new mongoose.Schema({
   doct: { type: String },
   department: { type: String },
   comment: { type: String },
+  prescription: { type: String },
+  medication: { type: String },
+  diagnosis: { type: String },
+  bp: { type: String },
+  dever: { type: String },
 });
 
  export const BookingModel = mongoose.model('bookings', UserSchema);

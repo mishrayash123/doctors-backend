@@ -1,5 +1,6 @@
 
 import  {createUser,getUsers} from '../db/Booking.js';
+import {BookingModel} from '../db/Booking.js'
 
 
 
@@ -36,3 +37,23 @@ export const Booking = async (req, res) => {
       return res.sendStatus(400);
     }
   };
+
+
+  export const updateBooking = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const  data  = req.body;
+      const updatedItem = await BookingModel.findByIdAndUpdate(id.trim(), data, {
+        new: true,
+      });
+  
+      if (!updatedItem) {
+        return res.status(404).json({ message: 'Item not found' });
+      }
+  
+      return res.json(updatedItem);
+    } catch (error) {
+      console.log(error);
+      return res.sendStatus(400);
+    }
+  }
