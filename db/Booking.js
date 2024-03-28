@@ -14,6 +14,8 @@ const UserSchema = new mongoose.Schema({
   diagnosis: { type: String },
   bp: { type: String },
   dever: { type: String },
+  date: { type: String },
+  time: { type: String },
 });
 
  export const BookingModel = mongoose.model('bookings', UserSchema);
