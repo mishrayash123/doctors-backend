@@ -16,6 +16,10 @@ const UserSchema = new mongoose.Schema({
   dever: { type: String },
   date: { type: String },
   time: { type: String },
+  Fever: { type: String },
+  Headache : { type: String },
+  Cold: { type: String },
+  Currentproblem: { type: String },
 });
 
  export const BookingModel = mongoose.model('bookings', UserSchema);
