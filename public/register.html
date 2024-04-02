@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    
-    <!-- Navbar Section -->
     <div class="navbar">
         <h1 class="logo">Doctor+</h1>
         <div class="search">
@@ -33,9 +31,6 @@
             <button class="btn"><a href="login.html">Login</a></button>
         </div>
     </div>
-    <!-- End of Navbar -->
-
-    <!-- Login Container -->
     <div class="register-container">
         <div>
             <img src="./assets/pngtree-protect-heart-illustration-world-heart-disease-day-doctor-png-image_14101423 1.png" alt="" class="side-img">
@@ -44,23 +39,23 @@
             <h3>Welcome</h3>
             <h4>Register</h4>
             <p id="info">Lorem ipsum dolor sit amet, consectetue adipiscing elit.</p>
-            <form action="" class="form">
+            <form class="form">
                 <div class="form-lable">
                     <div class="form">
                         <label id="lable">Usernsme</label><br>
-                        <input type="text" placeholder="Enter Your Name">
+                        <input id="signup-name" type="text" placeholder="Enter Your Name">
                     </div>
                     <div class="form">
                         <label id="lable">Email</label><br>
-                        <input type="email" placeholder="Enter Your Email/Phone Number">
+                        <input id="signup-email" type="email" placeholder="Enter Your Email/Phone Number">
                     </div>
                     <div class="form"></div>
                         <label id="lable">Password</label><br>
-                        <input type="password" placeholder="Enter Your Password">
+                        <input id="signup-password" type="password" placeholder="Enter Your Password">
                         <img src="./assets/download (7).png" alt="" width="20px" height="20px" id="img">
                     </div>
                     
-                    <button type="submit" class="button">Register</button>
+                    <button id="signup-btn-submit" type="submit" class="button">Register</button>
                         
                     <p id="account">Already have an account?<a href="login.html"> Login</a></p>
                     
@@ -112,7 +107,42 @@
     </footer>
     <!-- End of Footer -->
 
+    <script>
+        const form = {
+  email: document.getElementById("signup-email"),
+  name: document.getElementById("signup-name"),
+  password: document.getElementById("signup-password"),
+  submit: document.getElementById("signup-btn-submit"),
+};
+let button = form.submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  const login = "http://localhost:3000/auth/register";
 
+  fetch(login, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      username:form.name.value,
+      email: form.email.value,
+      password: form.password.value,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("You have registered succesfully now you can login now"); 
+      if (data.error) {
+        alert("Error Password or Username"); 
+      } else {
+      }
+    })
+    .catch((err) => {
+      alert("Email Already Exist"); 
+    });
+});
+    </script>
     <script src="script.js"></script>
 
 </body>

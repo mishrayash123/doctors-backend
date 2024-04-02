@@ -48,16 +48,16 @@
                 <div class="form-lable">
                     <div class="form">
                         <label id="lable">Email</label><br>
-                        <input type="email" placeholder="Enter Your Email/Phone Number">
+                        <input id="signin-email" type="email" placeholder="Enter Your Email/Phone Number">
                     </div>
                     <div class="form"></div>
                         <label id="lable">Password</label><br>
-                        <input type="password" placeholder="Enter Your Password">
+                        <input id="signin-password" type="password" placeholder="Enter Your Password">
                         <img src="./assets/download (7).png" alt="" width="20px" height="20px" id="img">
                     </div>
                     <a href="#" id="password">Forget Password</a>
 
-                    <button type="submit" class="button">Login</button>
+                    <button id="signin-btn-submit" type="submit" class="button">Login</button>
                     <div id="icons">
                         <p>OR</p>
                         <div id="img-icon">
@@ -113,7 +113,42 @@
         </div>
     </footer>
     <!-- End of Footer -->
+    <script>
+        const form = {
+  email: document.getElementById("signin-email"),
+  password: document.getElementById("signin-password"),
+  submit: document.getElementById("signin-btn-submit"),
+};
+let button = form.submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  const login = "http://localhost:3000/auth/login";
 
+  fetch(login, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: form.email.value,
+      password: form.password.value,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("You are signedin succesfully"); 
+        localStorage.setItem("doctorstoken",data.sessionToken)
+        localStorage.setItem("userid",data._id)
+      if (data.error) {
+        alert("Error Password or Email"); 
+      } else {
+      }
+    })
+    .catch((err) => {
+     alert("Error Password or Email"); 
+    });
+});
+    </script>
 
     <script src="script.js"></script>
 
