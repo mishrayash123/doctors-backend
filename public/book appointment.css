@@ -155,7 +155,7 @@ body{
     align-items: center;
     gap: 10px;
 }
-#box{
+#update-dept{
     width: 250px;
     height: 35px;
     border-style: none;
@@ -165,13 +165,34 @@ body{
     box-shadow: 0 5px 10px #cbcccc;
 	cursor: default;
 }
+#update-bio{
+    width: 250px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 248);
+    padding: 0 10px;
+    box-shadow: 0 5px 10px #cbcccc;
+	cursor: default;
+}
+
 .personal-info{
     margin-top: 30px;
     display: flex;
     align-items: center;
     gap: 60px;
 }
-#box1{
+#book-email{
+    width: 240px;
+    height: 35px;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(252, 250, 248);
+    padding-left: 10px;
+    box-shadow: 0 5px 10px #cbcccc;
+	cursor: default;
+}
+#update-phone{
     width: 240px;
     height: 35px;
     border-style: none;

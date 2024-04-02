@@ -130,30 +130,30 @@
                         <div class="form">
                             <div>
                                 <label>First Name</label>
-                                <input type="text" placeholder="First Name:">
+                                <input id="update-fname" type="text" placeholder="First Name:">
                             </div>
                             <div>
                                 <label>Last Name</label>
-                                <input type="text" placeholder="Last Name:">
+                                <input id="update-password" type="text" placeholder="Last Name:">
                             </div>
                         </div>
                         <div class="form">
                             <div>
                                 <label>Your Email</label>
-                                <input type="email" placeholder="Email:">
+                                <input id="update-email" type="email" placeholder="Email:">
                             </div>
                             <div>
                                 <label>Phone No.</label>
-                                <input type="number" placeholder="Phone No.">
+                                <input id="update-phone" type="number" placeholder="Phone No.">
                             </div>
                         </div>
                         <div>
                             <label>Your Bio Here:</label>
-                            <input type="text" placeholder="Bio" top,right>
+                            <input id="update-bio" type="text" placeholder="Bio" top,right>
                         </div>
 
                         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                        <button type="submit" class="btn">Update</button>
+                        <button type="submit" id="update-btn-submit" class="btn">Update</button>
                     </form>
                 </div>
 
@@ -256,7 +256,47 @@
         </div>
     </footer>
     <!-- End of Footer -->
+    <script>
+        const form = {
+            email : document.getElementById("update-fname"),
+            firstname : document.getElementById("update-email"),
+            lastname: document.getElementById("update-password"),
+            Phoneno: document.getElementById("update-phone"),
+            Bio: document.getElementById("update-bio"),
+            submit: document.getElementById("update-btn-submit"),
+};
+let button = form.submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = localStorage.getItem("userid");
+  const login = `http://localhost:3000/updatesettings/${id}`;
 
+  fetch(login, {
+    method: "PATCH",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+            email : form.email.value,
+            firstname : form.firstname.value,
+            lastname: form.lastname.value,
+            Phoneno: form.Phoneno.value,
+            Bio: form.Bio.value,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("Updated succesfully");
+      if (data.error) {
+        alert("Error"); 
+      } else {
+      }
+    })
+    .catch((err) => {
+     alert("Error"); 
+    });
+});
+    </script>
 
     <script src="script.js"></script>
 

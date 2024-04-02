@@ -49,28 +49,28 @@
             <form class="form" action="#">
                 <div class="namebox">
                     <label for="#" id="title2">Patient Name</label>
-                    <input type="text" placeholder="Patient Name: " required>
+                    <input id="book-name" type="text" placeholder="Patient Name: " required>
                 </div>
                 <div class="details">
                     <div>
                         <label for="#" id="title2"> Departmenet</label>
-                        <select id="box">
+                        <select id="update-dept">
                             <option>Select Departmenet</option>
-                            <option value="1">Eye Care</option>
-                            <option value="2">Nurologist</option>
-                            <option value="3">Cardiologist</option>
-                            <option value="4">Dermatologist</option>
+                            <option value="Eye Care">Eye Care</option>
+                            <option value="Nurologist">Nurologist</option>
+                            <option value="Cardiologist">Cardiologist</option>
+                            <option value="Dermatologist">Dermatologist</option>
                         </select>
                     </div>
 
                     <div>
                         <label for="#" id="title2"> Doctor</label>
-                        <select id="box">
+                        <select id="update-bio">
                             <option>Select Doctor</option>
-                            <option value="1">Dr Zeena</option>
-                            <option value="2">Dr Lolita</option>
-                            <option value="3">Dr Cristine</option>
-                            <option value="4">Dr Jhon</option>
+                            <option value="Dr Zeena">Dr Zeena</option>
+                            <option value="Dr Lolita">Dr Lolita</option>
+                            <option value="Dr Cristine">Dr Cristine</option>
+                            <option value="Dr Jhon">Dr Jhon</option>
                         </select>
                     </div>
                 </div>
@@ -78,20 +78,20 @@
                 <div class="personal-info">
                     <div>
                         <label for="#"  id="title2">Your Email</label>
-                        <input id="box1" type="email" placeholder="Your Email " required>
+                        <input id="book-email" type="email" placeholder="Your Email " required>
                     </div>
                     <div>
                         <label for="#" id="title2">Your Phone</label>
-                        <input id="box1" type="number" placeholder="Your Phone" required>
+                        <input id="update-phone" type="number" placeholder="Your Phone" required>
                     </div>
                 </div>
     
                 <div class="opinion">
                     <label for="#" id="title2">Comments</label>
-                    <input id="box2" cols="30" rows="10" placeholder="Your Message:">
+                    <input id="update-password" cols="30" rows="10" placeholder="Your Message:">
                 </div>
 
-                <button><a href="#">Book Appointment</a></button>
+                <button id="update-btn-submit">Book Appointment</button>
             </form>
         </div> 
     </div>
@@ -140,6 +140,50 @@
     </footer>
     <!-- End of Footer -->
 
+    <script>
+        const form = {
+            name:document.getElementById("book-name"),
+        mob: document.getElementById("update-phone"),
+        comment: document.getElementById("update-password"),
+        email: document.getElementById("book-email"),
+        doct:document.getElementById("update-bio"),
+        department:document.getElementById("update-dept"),
+        submit: document.getElementById("update-btn-submit"),
+};
+let button = form.submit.addEventListener("click", (e) => {
+  e.preventDefault();
+  const id = localStorage.getItem("userid");
+  const login = `http://localhost:3000/book`;
+
+  fetch(login, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+            userid:id,
+            name:form.name.value,
+        mob:form.mob.value,
+        comment:form.comment.value,
+        email : form.email.value,
+        doct:form.doct.value,
+        department:form.department.value
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+        alert("Booked succesfully");
+      if (data.error) {
+        alert("Error"); 
+      } else {
+      }
+    })
+    .catch((err) => {
+     alert("Error"); 
+    });
+});
+    </script>
 
     <script src="script.js"></script>
 
