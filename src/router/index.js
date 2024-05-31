@@ -1,7 +1,7 @@
 import express from 'express';
 
 import authentication from './authentication.js';
-import setting from './settings.js';
+import setting from './Settings.js';
 import Booking from './Booking.js';
 
 
