@@ -6,7 +6,7 @@ import {BookingModel} from '../db/Booking.js'
 
 export const Booking = async (req, res) => {
     try {
-      const {userid, name,mob,comment,email,doct,department} = req.body;
+      const {userid, name,mob,time,date,email,doct,Currentproblem,type,fee} = req.body;
       if (!userid) {
         return res.sendStatus(400);
       }
@@ -16,10 +16,13 @@ export const Booking = async (req, res) => {
         name,
         userid,
         mob,
-        comment,
+        time,
+        date,
         email,
+        type,
+        fee,
         doct,
-        department
+        Currentproblem,
       });
       return res.status(200).json(Booking).end();
     } catch (error) {

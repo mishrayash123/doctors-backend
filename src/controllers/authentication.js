@@ -1,6 +1,6 @@
 import express from 'express';
 
-import { getUserByEmail, createUser }  from '../db/users.js';
+import { getUserByEmail, createUser,deleteUserById }  from '../db/users.js';
 import { authentication, random } from '../helpers/index.js';
 
 export const login = async (req, res) => {
@@ -66,6 +66,19 @@ export const register = async (req, res) => {
     });
 
     return res.status(200).json(user).end();
+  } catch (error) {
+    console.log(error);
+    return res.sendStatus(400);
+  }
+}
+
+
+export const deleteUser = async (req, res) => {
+  try {
+    const { id } = (req.params);
+    const deletedUser = await deleteUserById(id);
+
+    return res.json(deletedUser);
   } catch (error) {
     console.log(error);
     return res.sendStatus(400);

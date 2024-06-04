@@ -17,8 +17,8 @@ const UserSchema = new mongoose.Schema({
   date: { type: String },
   time: { type: String },
   Fever: { type: String },
-  Headache : { type: String },
-  Cold: { type: String },
+  fee : { type: String },
+  type: { type: String },
   Currentproblem: { type: String },
 });
 
