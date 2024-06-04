@@ -3,10 +3,11 @@ import mongoose from 'mongoose';
 // User Config
 const UserSchema = new mongoose.Schema({
   email: { type: String, required: true, },
-  username: { type: String, required: true },
   firstname: { type: String },
   lastname: { type: String},
   Phoneno: { type: Number },
+  location: { type: String },
+  startas: { type: String },
   Bio: { type: String },
   password: { type: String, required: true, select: false },
   salt: { type: String, select: false },
