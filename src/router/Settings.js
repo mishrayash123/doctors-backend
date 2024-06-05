@@ -5,6 +5,6 @@ import { isAuthenticated, isOwner } from '../middlewares/index.js';
 
 export default (router) => {
   router.post('/users', getAllUsers);
-  router.delete('/deleteuser/:id', isAuthenticated, isOwner, deleteUser);
+  router.delete('/deleteuser/:id', deleteUser);
   router.patch('/updatesettings/:id',  updateUser);
 };
