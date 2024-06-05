@@ -10,6 +10,7 @@ const UserSchema = new mongoose.Schema({
   startas: { type: String },
   Bio: { type: String },
   dob: { type: String },
+  gender: { type: String },
   address: { type: String },
   type: { type: String },
   profilepic: { type: String },
