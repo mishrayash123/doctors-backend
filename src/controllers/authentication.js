@@ -44,7 +44,7 @@ export const register = async (req, res) => {
   try {
     const { email, password,location,startas,firstname,lastname} = req.body;
 
-    if (!email || !password || !username) {
+    if (!email || !password ) {
       return res.sendStatus(400);
     }
 
