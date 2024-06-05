@@ -6,6 +6,7 @@ const UserSchema = new mongoose.Schema({
   doctorid: { type: String },
   feedback: { type: String},
   rating: { type:String },
+  recommend: { type:String },
 });
 
  export const UserModel = mongoose.model('feedbackofdoctorproject', UserSchema);

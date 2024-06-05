@@ -8,6 +8,7 @@ export const feedback = async (req, res) => {
       const {userid,
         doctorid,
         feedback,
+        recommend,
         rating} = req.body;
       if (!userid) {
         return res.sendStatus(400);
@@ -17,6 +18,7 @@ export const feedback = async (req, res) => {
       const Booking  = await createfeedback({
         userid,
         doctorid,
+        recommend,
         feedback,
         rating
       });
