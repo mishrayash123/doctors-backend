@@ -2,6 +2,8 @@ import express from 'express';
 
 import { getUserByEmail, createUser,deleteUserById }  from '../db/users.js';
 import { authentication, random } from '../helpers/index.js';
+import {UserModel} from "../db/users.js"
+
 
 export const login = async (req, res) => {
   try {
@@ -64,6 +66,29 @@ export const register = async (req, res) => {
         salt,
         password: authentication(salt, password),
     });
+
+    return res.status(200).json(user).end();
+  } catch (error) {
+    console.log(error);
+    return res.sendStatus(400);
+  }
+}
+
+
+export const updatepassword = async (req, res) => {
+  try {
+    const {email,newpassword} = req.body;
+
+    if (!newpassword || !email ) {
+      return res.sendStatus(400);
+    }
+
+    const salt = random();
+    const user = await UserModel.findOneAndUpdate(
+      { email },
+      { $set: { salt: salt, password:authentication(salt,newpassword)} },
+      { returnOriginal: false }
+    );
 
     return res.status(200).json(user).end();
   } catch (error) {
