@@ -44,9 +44,9 @@ export const login = async (req, res) => {
 
 export const register = async (req, res) => {
   try {
-    const { email, password,location,startas,firstname,lastname} = req.body;
+    const { email, password,location,startas,firstname,lastname,type} = req.body;
 
-    if (!email || !password ) {
+    if (!email || !password || !type) {
       return res.sendStatus(400);
     }
 
@@ -59,6 +59,7 @@ export const register = async (req, res) => {
     const salt = random();
     const user = await createUser({
       email,
+      type,
       location,
       firstname,
       lastname,
