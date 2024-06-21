@@ -44,7 +44,7 @@ export const login = async (req, res) => {
 
 export const register = async (req, res) => {
   try {
-    const { email, password,location,startas,firstname,lastname,type} = req.body;
+    const { email, password,location,firstname,lastname,type} = req.body;
 
     if (!email || !password || !type) {
       return res.sendStatus(400);
@@ -63,7 +63,6 @@ export const register = async (req, res) => {
       location,
       firstname,
       lastname,
-      startas,
         salt,
         password: authentication(salt, password),
     });
