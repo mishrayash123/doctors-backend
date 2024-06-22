@@ -7,6 +7,7 @@ const UserSchema = new mongoose.Schema({
   mob: { type: String},
   email: { type: String },
   doct: { type: String },
+  doctorname: { type: String },
   department: { type: String },
   comment: { type: String },
   prescription: { type: String },
