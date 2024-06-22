@@ -8,6 +8,7 @@ const UserSchema = new mongoose.Schema({
   email: { type: String },
   doct: { type: String },
   doctorname: { type: String },
+  paymentdone: { type: Boolean },
   department: { type: String },
   comment: { type: String },
   prescription: { type: String },
