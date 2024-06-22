@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 // User Config
 const UserSchema = new mongoose.Schema({
-  email: { type: String, required: true, },
+  email: { type: String, required: true,unique:true },
   firstname: { type: String },
   lastname: { type: String},
   Phoneno: { type: Number },
