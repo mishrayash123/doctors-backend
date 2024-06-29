@@ -5,7 +5,7 @@ import setting from './Settings.js';
 import Booking from './Booking.js';
 import feedback from './feedback.js';
 import saved from './saved.js';
-
+import otp from './otp.js'
 
 const router = express.Router();
 
@@ -15,5 +15,6 @@ export default () => {
   feedback(router);
   setting(router);
   Booking(router);
+  otp(router);
   return router;
 };
