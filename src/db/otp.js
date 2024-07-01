@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({
-    email: {type:String,required: true },
+    email: {type:String,required: true,unique:true },
     otp:{type:String},
     createdAt: { type: Date, expires: '5m', default: Date.now },
 });

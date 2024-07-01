@@ -5,7 +5,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'growmorelimited@gmail.com',
-    pass: 'YashMridul@786',
+    pass: 'nfjh werg zfpi kjpm',
   },
 });
 
@@ -32,10 +32,26 @@ const storeOtp = async (email, otp) => {
   await newOtp.save();
 };
 
+const updateOtp = async (email, otp) => {
+  await Otp.updateOne(
+    { email: email },
+    { email, otp, createdAt: Date.now() },
+    { upsert: true }
+  );
+};
+
 const sendOtp = async (email) => {
   const otp = generateOtp();
-  await storeOtp(email, otp);
+
+  const existingOtp = await Otp.findOne({ email });
+  if (existingOtp) {
+    await updateOtp(email, otp);
   await sendOtpEmail(email, otp);
+  }
+  else{
+    await storeOtp(email, otp);
+    await sendOtpEmail(email, otp);
+  }
 };
 
 export const otp = async (req, res) => {
