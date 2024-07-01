@@ -24,9 +24,6 @@ const UserSchema = new mongoose.Schema({
   totalexp: { type: String },
   fees: { type: String },
   clinic: { type:String },
-  password: { type: String, required: true, select: false },
-  salt: { type: String, select: false },
-  sessionToken: { type: String, select: false },
 });
 
  export const UserModel = mongoose.model('savedUserofdoctors', UserSchema);

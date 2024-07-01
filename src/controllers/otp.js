@@ -4,8 +4,8 @@ import Otp from "../db/otp.js";
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your-email@gmail.com',
-    pass: 'your-email-password',
+    user: 'growmorelimited@gmail.com',
+    pass: 'YashMridul@786',
   },
 });
 
@@ -15,7 +15,7 @@ const generateOtp = () => {
 
 const sendOtpEmail = async (email, otp) => {
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'growmorelimited@gmail.com',
     to: email,
     subject: 'Your OTP Code',
     text: `Your OTP code is ${otp}`,
@@ -39,12 +39,13 @@ const sendOtp = async (email) => {
 };
 
 export const otp = async (req, res) => {
-    const { userId, email } = req.body;
+    const {email } = req.body;
 
   try {
-    await sendOtp(userId, email);
+    await sendOtp(email);
     res.status(200).send('OTP sent successfully');
   } catch (error) {
+    console.log(error)
     res.status(500).send('Error sending OTP');
   }
   }
