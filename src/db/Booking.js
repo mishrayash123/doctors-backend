@@ -12,6 +12,7 @@ const UserSchema = new mongoose.Schema({
   department: { type: String },
   comment: { type: String },
   prescription: { type: String },
+  Status: { type: String },
   medication: { type: String },
   diagnosis: { type: String },
   bp: { type: String },
